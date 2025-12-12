@@ -1,0 +1,24 @@
+# Core dependencies
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Date/time handling
+python-dateutil==2.8.2
+
+# Label generation
+reportlab==4.0.7
+python-barcode==0.15.1
+Pillow==10.1.0
+
+# Data handling
+typing-extensions==4.9.0
+
+# Optional: CLI interface
+click==8.1.7
+
+# Development dependencies (optional)
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.12.1
+mypy==1.7.1
+ruff==0.1.8

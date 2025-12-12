@@ -1,0 +1,69 @@
+{
+  "order_id": "ORD-2025-002",
+  "purchase_order": "PO-BIGBOX-67890",
+  "ship_date": "2025-12-16",
+  "ship_from": {
+    "name": "ACME Distribution Center",
+    "address_line1": "1000 Warehouse Drive",
+    "address_line2": "Building A",
+    "city": "Dallas",
+    "state": "TX",
+    "postal_code": "75201",
+    "country": "US"
+  },
+  "ship_to": {
+    "name": "BigBox Superstore #1523",
+    "address_line1": "9900 Retail Parkway",
+    "address_line2": "Suite 100",
+    "city": "Houston",
+    "state": "TX",
+    "postal_code": "77002",
+    "country": "US"
+  },
+  "carrier_code": "FEDX",
+  "service_level": "Express",
+  "customer_account": "CUST-BIGBOX-555",
+  "notes": "High-priority shipment - deliver to receiving manager",
+  "items": [
+    {
+      "line_number": 1,
+      "sku": "LAPTOP-X1-SLV",
+      "description": "Professional Laptop X1 - Silver",
+      "quantity": 25,
+      "uom": "EA",
+      "unit_weight": 4.5
+    },
+    {
+      "line_number": 2,
+      "sku": "MONITOR-27-4K",
+      "description": "27-inch 4K Monitor",
+      "quantity": 15,
+      "uom": "EA",
+      "unit_weight": 12.0
+    },
+    {
+      "line_number": 3,
+      "sku": "KEYBOARD-MX",
+      "description": "Mechanical Keyboard MX Series",
+      "quantity": 40,
+      "uom": "EA",
+      "unit_weight": 2.2
+    },
+    {
+      "line_number": 4,
+      "sku": "MOUSE-ERGO",
+      "description": "Ergonomic Wireless Mouse",
+      "quantity": 40,
+      "uom": "EA",
+      "unit_weight": 0.3
+    },
+    {
+      "line_number": 5,
+      "sku": "CABLE-USBC-6FT",
+      "description": "USB-C Cable 6ft - Black",
+      "quantity": 100,
+      "uom": "EA",
+      "unit_weight": 0.15
+    }
+  ]
+}

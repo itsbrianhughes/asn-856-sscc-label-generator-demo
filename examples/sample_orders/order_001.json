@@ -1,0 +1,53 @@
+{
+  "order_id": "ORD-2025-001",
+  "purchase_order": "PO-ACME-12345",
+  "ship_date": "2025-12-15",
+  "ship_from": {
+    "name": "ACME Distribution Center",
+    "address_line1": "1000 Warehouse Drive",
+    "address_line2": "Building A",
+    "city": "Dallas",
+    "state": "TX",
+    "postal_code": "75201",
+    "country": "US"
+  },
+  "ship_to": {
+    "name": "TechMart Retail Store #42",
+    "address_line1": "5678 Commerce Boulevard",
+    "address_line2": null,
+    "city": "Austin",
+    "state": "TX",
+    "postal_code": "78701",
+    "country": "US"
+  },
+  "carrier_code": "UPSN",
+  "service_level": "Ground",
+  "customer_account": "CUST-98765",
+  "notes": "Standard delivery - dock receiving hours 8AM-5PM",
+  "items": [
+    {
+      "line_number": 1,
+      "sku": "WIDGET-A-100",
+      "description": "Premium Widget Type A - Blue",
+      "quantity": 50,
+      "uom": "EA",
+      "unit_weight": 0.5
+    },
+    {
+      "line_number": 2,
+      "sku": "GADGET-B-200",
+      "description": "Standard Gadget Type B - Red",
+      "quantity": 30,
+      "uom": "EA",
+      "unit_weight": 1.2
+    },
+    {
+      "line_number": 3,
+      "sku": "DEVICE-C-300",
+      "description": "Advanced Device Type C - Green",
+      "quantity": 20,
+      "uom": "EA",
+      "unit_weight": 2.5
+    }
+  ]
+}
