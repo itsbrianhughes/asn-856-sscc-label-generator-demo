@@ -85,7 +85,7 @@ Shipment + Cartons (with SSCCs)
 ## Project Structure
 
 ```
-PROJECT-3-ASN-856-GENERATOR-DEMO/
+asn-856-sscc-label-generator-demo/
 ├── src/
 │   ├── models/                  # Data models (PART 1 ✅)
 │   │   ├── input_models.py      # JSON/CSV input schemas
@@ -164,7 +164,7 @@ The result is a portfolio-grade simulation of how ASNs and SSCC labels are gener
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd PROJECT-3-ASN-856-GENERATOR-DEMO
+cd asn-856-sscc-label-generator-demo
 
 # Create virtual environment (recommended)
 python -m venv venv
