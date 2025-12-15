@@ -112,6 +112,46 @@ PROJECT-3-ASN-856-GENERATOR-DEMO/
 
 ---
 
+## Business Context
+
+### Real-World Business Context
+In real supply chain and retail operations, Advance Ship Notices (EDI 856) are not optional artifacts — they are operationally critical documents used by retailers to plan receiving, schedule dock appointments, validate shipments, and reconcile inventory.
+
+Incorrect ASN structure, invalid carton hierarchies, or mismatched SSCC labels commonly result in:
+	•	ASN rejections during retailer onboarding
+	•	Receiving delays at distribution centers
+	•	Chargebacks for missing or invalid carton-level data
+	•	Inventory mismatches between ASN, physical cartons, and invoices
+
+This project simulates how suppliers generate ASNs and carton labels in production environments before transmitting data to trading partners.
+
+### Example Scenario
+A mid-market supplier ships a multi-carton order to a large retailer.
+
+Before shipment:
+	•	The order is processed internally from an ERP or OMS.
+	•	Items must be packed into cartons based on quantity and weight constraints.
+	•	Each carton must be assigned a unique GS1 SSCC-18.
+	•	A compliant X12 856 ASN must be generated reflecting the physical shipment hierarchy.
+
+This project models that workflow end-to-end by:
+	•	Converting order data into cartonized shipments
+	•	Generating SSCC-18 identifiers per carton
+	•	Building a properly structured ASN with Shipment → Order → Tare (Carton) → Item HL loops
+	•	Producing shipping labels aligned with the ASN carton data
+
+### Production-Style ASN & Label Behavior
+Real retailers enforce strict expectations beyond basic X12 syntax. This project reflects those realities by implementing:
+	•	Proper HL hierarchy and parent/child relationships
+	•	Carton-level SSCC tracking tied to ASN data
+	•	Accurate quantity rollups from item → carton → shipment
+	•	Consistent sequencing and identifiers across ASN segments
+	•	Deterministic cartonization rules mirroring warehouse packing logic
+
+The result is a portfolio-grade simulation of how ASNs and SSCC labels are generated in real supplier environments, not just a formatted EDI file.
+
+---
+
 ## Installation
 
 ### Prerequisites
